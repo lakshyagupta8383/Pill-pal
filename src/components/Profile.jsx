@@ -7,6 +7,7 @@ const Profile = () => {
   const [user, setUser] = useState(null);
   const [fullName, setFullName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -46,7 +47,7 @@ const Profile = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-center">My Profile</h2>
+        <h2 className="text-3xl p-4 font-bold mb-6 text-center">Let's Get Started</h2>
 
         {error && (
           <div className="bg-red-100 text-red-700 p-3 mb-4 rounded">
@@ -76,8 +77,9 @@ const Profile = () => {
             <label className="block mb-1 font-medium">Email</label>
             <input
               type="email"
-              className="w-full p-3 border rounded-lg bg-gray-100 cursor-not-allowed"
-              value={user ? user.email : ""}
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -92,7 +94,7 @@ const Profile = () => {
             />
           </div>
           
-          <div className="mb-4">
+          <div className="mb-4 pb-4">
             <label className="block mb-1 font-medium">Password</label>
             <input
               type="password"
@@ -104,7 +106,7 @@ const Profile = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition"
+            className="w-full text-lg bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition"
           >
             Update Profile
           </button>
