@@ -1,0 +1,13 @@
+[
+    { "id": 1, "fact": "Drinking enough water can improve your concentration and cognitive function." },
+    { "id": 2, "fact": "Laughter boosts your immune system and lowers stress hormones." },
+    { "id": 3, "fact": "Walking for 30 minutes a day can reduce the risk of heart disease." },
+    { "id": 4, "fact": "Eating an apple a day can actually help maintain heart health." },
+    { "id": 5, "fact": "Regular physical activity can increase your lifespan by up to 5 years." },
+    { "id": 6, "fact": "Your body burns more calories digesting protein than fats or carbohydrates." },
+    { "id": 7, "fact": "Sleep is crucial for memory consolidation and overall mental health." },
+    { "id": 8, "fact": "Dark chocolate contains antioxidants that can improve heart health." },
+    { "id": 9, "fact": "Smiling, even when you’re not happy, can reduce stress and make you feel better." },
+    { "id": 10, "fact": "Spending time in nature can significantly reduce stress and improve mood." }
+  ]
+

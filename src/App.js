@@ -1,27 +1,25 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Welcome from "./components/Welcome";
 import Login from "./components/Login";
-// import Profile from "./components/Profile";
+import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Profile from "./components/Profile";
-import NavbarPage from "./components/Navbar";
-import SidebarPage from "./components/Sidebar";
-import HeroSection from "./components/HeroSection";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Profile />} />
-        <Route path="/navbar" element={<NavbarPage />} />
-        <Route path="/sidebar" element={<SidebarPage />} />
-        <Route path="/hero" element={<HeroSection />} />
-        <Route path="/dashboard" element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        } />
+        <Route path="/" element={<Welcome />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route 
+          path="/dashboard" 
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } 
+        />
       </Routes>
     </Router>
   );
