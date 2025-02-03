@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.spiral-bg {
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #0d47a1,   /* Dark Blue */
+      #1976d2,   /* Medium Blue */
+      #64b5f6,   /* Light Blue */
+      #e3f2fd,   /* Very Light Blue */
+      #ffffff,   /* White */
+      #e3f2fd,   /* Very Light Blue */
+      #64b5f6,   /* Light Blue */
+      #1976d2,   /* Medium Blue */
+      #0d47a1    /* Dark Blue */
+    );
+    min-height: 100vh;
+  }
+  
+  
